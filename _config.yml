@@ -1,3 +1,4 @@
+baseurl: /myblog
 auto: true
 server: true
 markdown: rdiscount
