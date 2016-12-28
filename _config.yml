@@ -1,30 +1,49 @@
-title: Long Haul
-description: Long Form Jekyll theme built with SASS / COMPASS / SUSY
+# Dependencies
+markdown:            kramdown 
+highlighter:         rouge 
 
-url: http://brianmaierjr.github.com/long-haul
-baseurl: ""
-paginate_path: "blog/page:num/"
-permalink: blog/:title/
-/myblog
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           
+#relative_permalinks: true
 
+# Setup
+title:               Yateendra Sahu
+#tagline:             'Sahu'
+description:         Yateendra sahu's official website 
+url:                 http://yateendra.net
+baseurl:             /
+paginate:            15
 
-markdown: kramdown
-highlighter: rouge
-gems: [jekyll-paginate]
-paginate: 5
+tagline: A log of everyday life
+disqus_shortname: yateendra
 
-navigation:
- - title: Home
-   url: /index.html
- - title: About
-   url: /about
- - title: Contact
-   url: /contact
+# About/contact
+author:
+  name:              Yateendra 
+  url:               http://yateendra.net 
+  email:             yateendra.sahu@gmail.com 
+  googleplus:        https://plus.google.com/+yateendrasahu/
 
-social:
-   github: brianmaierjr
-   twitter: brianmaierjr
-   facebook: brianmaierjr
-   email: brimaidesigns@gmail.com
+# Timezone
+timezone: Asia/Kolkata
 
-google_analytics: "UA-58263416-1"
+# Custom vars
+version:             1.0.0
+
+# Custom gems
+gems:
+    - jekyll-sitemap
+    - jekyll-seo-tag
+    - jekyll-mentions
+    - jemoji
+    - jekyll-redirect-from
+    - jekyll-feed
+   
+# jekyll-tagging params
+tag_page_layout: blog_by_tag
+tag_page_dir: blog/tag
+tag_feed_layout: blog_by_tag
+tag_feed_dir: blog/tag
+tag_permalink_style: pretty
