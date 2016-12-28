@@ -1,9 +1,28 @@
-baseurl: /myblog
-auto: true
-server: true
-markdown: rdiscount
-pygments: true
-exclude: ['README.md', 'src/', 'node_modules', 'package.json', 'Gruntfile.js', '*.command']
-permalink: /:year/:month/:title
-paginate: 10
-paginate_path: "/page:num"
+title: Long Haul
+description: Long Form Jekyll theme built with SASS / COMPASS / SUSY
+
+url: http://brianmaierjr.github.com/long-haul
+baseurl: ""
+paginate_path: "blog/page:num/"
+permalink: blog/:title/
+
+markdown: kramdown
+highlighter: rouge
+gems: [jekyll-paginate]
+paginate: 5
+
+navigation:
+ - title: Home
+   url: /index.html
+ - title: About
+   url: /about
+ - title: Contact
+   url: /contact
+
+social:
+   github: brianmaierjr
+   twitter: brianmaierjr
+   facebook: brianmaierjr
+   email: brimaidesigns@gmail.com
+
+google_analytics: "UA-58263416-1"
