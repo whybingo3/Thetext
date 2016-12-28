@@ -5,6 +5,8 @@ url: http://brianmaierjr.github.com/long-haul
 baseurl: ""
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
+/myblog
+
 
 markdown: kramdown
 highlighter: rouge
